@@ -1,3 +1,3 @@
-import SignoutLink from "./SignoutLink";
+import SignoutLink from "./signoutLink";
 
 export default SignoutLink;

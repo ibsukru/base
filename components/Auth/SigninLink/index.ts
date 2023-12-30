@@ -1,3 +1,3 @@
-import SigninLink from "./SigninLink";
+import SigninLink from "./signinLink";
 
 export default SigninLink;

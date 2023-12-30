@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { ThemeProvider } from "./providers";
 import NextTopLoader from "nextjs-toploader";
-import Nav from "@/components/Nav";
+import Nav from "@/components/nav";
 
 import "./globals.css";
 

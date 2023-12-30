@@ -2,7 +2,7 @@ import React from "react";
 
 import { auth } from "@/auth";
 import { redirect } from "next/navigation";
-import SigninLink from "@/components/Auth/SigninLink";
+import SigninLink from "@/components/auth/signinLink";
 
 async function SignIn() {
   const session = await auth();

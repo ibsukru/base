@@ -1,10 +1,10 @@
 import React from "react";
 import Link from "next/link";
-import ThemeChanger from "../ThemeChanger";
+import ThemeChanger from "../themeChanger";
 import { auth } from "@/auth";
-import SignoutLink from "../Auth/SignoutLink";
+import SignoutLink from "../auth/signoutLink";
 
-import styles from "./Nav.module.css";
+import styles from "./nav.module.css";
 
 const Nav = async () => {
   const session = await auth();
