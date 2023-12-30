@@ -8,7 +8,6 @@ import {
 import type { AdapterAccount } from "@auth/core/adapters";
 import { drizzle } from "drizzle-orm/postgres-js";
 import postgres from "postgres";
-import { Client } from "pg";
 
 export const users = pgTable("user", {
   id: text("id").notNull().primaryKey(),

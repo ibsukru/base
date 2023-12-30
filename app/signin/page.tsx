@@ -1,6 +1,5 @@
 import React from "react";
 
-import { signIn } from "next-auth/react";
 import { auth } from "@/auth";
 import { redirect } from "next/navigation";
 import SigninLink from "@/components/Auth/SigninLink";
