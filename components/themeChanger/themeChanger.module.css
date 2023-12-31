@@ -1,0 +1,19 @@
+.themes {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.themes a {
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 5px;
+  width: 26px;
+  height: 26px;
+  display: flex;
+}
+
+.themes a:hover,
+.selectedTheme {
+  background-color: var(--shade-2);
+}

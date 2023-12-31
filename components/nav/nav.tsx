@@ -3,6 +3,7 @@ import Link from "next/link";
 import ThemeChanger from "../themeChanger";
 import { auth } from "@/auth";
 import SignoutLink from "../auth/signoutLink";
+import { FaBeer } from "react-icons/fa";
 
 import styles from "./nav.module.css";
 
@@ -12,7 +13,7 @@ const Nav = async () => {
   return (
     <div className={styles.container}>
       <Link href={"/"} className={styles.home}>
-        home
+        <FaBeer />
       </Link>
       <div className={styles.theme}>
         <ThemeChanger />

@@ -2,6 +2,10 @@
 
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
+import { MdOutlineSystemUpdateAlt } from "react-icons/md";
+import { MdOutlineDarkMode, MdLightMode } from "react-icons/md";
+
+import styles from "./themeChanger.module.css";
 
 const ThemeChanger = () => {
   const { theme, setTheme } = useTheme();
@@ -16,14 +20,26 @@ const ThemeChanger = () => {
   }
 
   return (
-    <>
-      view:{" "}
-      <select value={theme} onChange={(e) => setTheme(e.target.value)}>
-        <option value="system">System</option>
-        <option value="dark">Dark</option>
-        <option value="light">Light</option>
-      </select>
-    </>
+    <div className={styles.themes}>
+      <a
+        onClick={(e) => setTheme("light")}
+        className={theme === "light" ? styles.selectedTheme : ""}
+      >
+        <MdLightMode />
+      </a>
+      <a
+        onClick={(e) => setTheme("dark")}
+        className={theme === "dark" ? styles.selectedTheme : ""}
+      >
+        <MdOutlineDarkMode />
+      </a>
+      <a
+        onClick={(e) => setTheme("system")}
+        className={theme === "system" ? styles.selectedTheme : ""}
+      >
+        <MdOutlineSystemUpdateAlt />
+      </a>
+    </div>
   );
 };
 

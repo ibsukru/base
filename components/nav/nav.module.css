@@ -5,8 +5,12 @@
 
 .home {
   flex: 1;
+  font-size: 24px;
+  color: var(--selection);
 }
 
 .theme {
-  margin-right: 5px;
+  margin-right: 15px;
+  top: 3px;
+  position: relative;
 }
